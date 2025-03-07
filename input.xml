@@ -1,0 +1,29 @@
+<book>
+    <chapter>
+    <title>Chapitre A</title>
+    </chapter>
+    <chapter>
+        <text>Text A</text>
+    </chapter>
+		   <chapter>
+        <text>Text A-a</text>
+    </chapter>
+     <chapter>
+     <title>Chapitre B</title>
+    </chapter>
+    <chapter>
+        <text>Text B</text>
+    </chapter>
+      <chapter>
+     <title>Title C</title>
+    </chapter>
+    <chapter>
+        <text>Text C</text>
+    </chapter>
+      <chapter>
+     <title>Title D</title>
+    </chapter>
+    <chapter>
+        <text>Text D</text>
+    </chapter>
+</book>
