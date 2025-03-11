@@ -1,6 +1,6 @@
 
 
-function readXml ($xmlFile) {
+function TransformXml ($xmlFile) {
 	$xml = New-Object XML
 	$xml.Load($xmlFile)
 	$nodes = $xml.SelectNodes("/book/*");
@@ -9,7 +9,6 @@ function readXml ($xmlFile) {
 	$books = $xmlDocument.CreateElement("books")
 	$xmlDocument.AppendChild($books)
 
-	$i = 0
 	foreach ($node in $nodes) {
 			if ($node.title -and $node.title.Contains('Chapitre')) {
 					$book = $xmlDocument.CreateElement("book")
@@ -22,7 +21,7 @@ function readXml ($xmlFile) {
 					$book.AppendChild($chapter)
 					$books.AppendChild($book)
 			} 
-			$i++
+
 	}
 	$xmlDocument.Save("output.xml")
 }

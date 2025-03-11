@@ -1,3 +1,3 @@
 . .\src\functions.ps1
-readXml "input.xml"
+TransformXml "input.xml"
 Pause
